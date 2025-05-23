@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Right click to check list in console</h1>
+    <div id="container"></div>
+   <script>
+     let fruits = ["Apple", "Mango", "Banana", "Melon","pineapple","Oranges"]
+     for(let fruit of fruits){
+        let h3 = document.createElement("h3")
+        h3.textContent = fruit
+        document.getElementById("container").appendChild(h3)
+        console.log(fruit)
+     } 
+   </script>
+</body>
+</html>
